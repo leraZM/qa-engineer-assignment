@@ -1,0 +1,17 @@
+{
+  "name": "qa-engineer-assignment",
+  "version": "1.0.0",
+  "description": "qa-engineer-assignment with playwright",
+  "scripts": {
+    "test": "cucumber-js"
+  },
+  "author": "Valeriia",
+  "license": "ISC",
+  "devDependencies": {
+    "@cucumber/cucumber": "^10.4.0",
+    "@playwright/test": "^1.43.1",
+    "playwright": "^1.43.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.5"
+  }
+}
