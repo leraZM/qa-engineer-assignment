@@ -43,7 +43,7 @@ For the efficiency of testing, the browser's headless mode is set as the default
 
 - **Reporting**:
   - Cucumber reports
-  ![Test report](<Test report.png>)
+  ![Test report](<docs/Test_report.png>)
 
 - **CI Tools**:
   - In the scope of the assignment, GitHub Actions is chosen for the convenience of providing easy access to run the tests.
