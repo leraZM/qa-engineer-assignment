@@ -57,8 +57,17 @@ When("User clicks on the question the second time", async function () {
 });
 
 Then("The answer is hidden", async function () {
-  const isHidden = await pageFixture.questionPage.isAnswerHidden(
+  const isVisible = await pageFixture.questionPage.isAnswerVisible(
     "Just use the form below!"
   );
-  expect(isHidden).toBe(true);
+  expect(isVisible).toBe(false);
+});
+
+Then("User sees the default question", async function () {
+  const defaultQuestionText = (await pageFixture.questionPage.getAllQuestionsText())[0];
+  const expected = "How to add a question?";
+
+  expect(defaultQuestionText).toEqual(
+    expected
+  );
 });

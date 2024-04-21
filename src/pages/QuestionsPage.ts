@@ -41,10 +41,6 @@ class QuestionPage {
     return this.page.isVisible(`text="${answer}"`);
   }
 
-  isAnswerHidden(answer: string) {
-    return this.page.isHidden(`text="${answer}"`);
-  }
-
   noQuestionsText() {
     return this.page.locator(".questions").textContent();
   }
